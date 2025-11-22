@@ -176,6 +176,17 @@ body {
     background: rgba(255, 255, 255, 0.05);
 }
 
+.whatsapp-btn {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--text-color);
+}
+
+.whatsapp-btn:hover {
+    border-color: #25D366;
+    color: #25D366;
+    background: rgba(37, 211, 102, 0.05);
+}
+
 /* Gallery Section */
 .gallery-grid {
     display: grid;
@@ -237,6 +248,23 @@ body {
     color: var(--secondary-text);
     margin-bottom: 2rem;
     font-size: 1.2rem;
+}
+
+.contact-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-buttons .btn {
+    width: 100%;
+    justify-content: center;
+    margin-top: 0 !important;
+    /* Override any inline or previous margin */
 }
 
 /* Footer */
