@@ -209,7 +209,7 @@ body {
 }
 
 .gallery-item:hover img {
-    transform: scale(1.05);
+    transform: none;
 }
 
 .overlay {
@@ -237,6 +237,40 @@ body {
     text-transform: uppercase;
     border: 1px solid white;
     padding: 0.5rem 1.5rem;
+}
+
+/* Collaborations Section */
+.collaborations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.collaboration-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all var(--transition-speed);
+    border-radius: 2px;
+    text-transform: uppercase;
+    min-height: 100px;
+}
+
+.collaboration-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+    color: var(--accent-color);
 }
 
 /* Contact Section */
